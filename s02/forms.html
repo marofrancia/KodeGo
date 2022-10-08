@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- HTML Forms - creates inputs and outputs that a user can interact with -->
+    <h1>
+        Sample Form
+    </h1>
+
+    <form action="">
+        <!-- it groups and identifies that a user can interact with the web page -->
+        <p> <!--paragraph-->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Juan">
+        </p>
+
+        <p>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Dela Cruz">
+        </p>
+
+        <p>
+            <label for="email">Last Name:</label>
+            <input type="text" id="email" name="email" placeholder="name@email.com">
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <!-- Submit - confirms the values input by the user -->
+            <input type="reset" value="Clear">
+            <!-- Reset - removes the information provided by the user inside the form -->
+        </p>
+    </form>
+<p></p>
+    <h1>
+        Sample Form
+    </h1>
+
+    <form action="">
+        <!-- it groups and identifies that a user can interact with the web page -->
+        <p> <!--paragraph-->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Juan">
+        </p>
+
+        <p>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Dela Cruz">
+        </p>
+
+        <p>
+            <label for="emailAdd">Email Address:</label>
+            <input type="email" id="emailAdd" name="emailAdd" placeholder="name@email.com">
+        </p>
+
+        <p>
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Onsite</label>
+            <input type="radio" name="eType" id="eType">
+            <label for="eType">Online</label>
+        </p>
+
+        <p>
+            <label for="batchNum">Batch Number:</label>
+            <select name="batchNum" id="batchNum">
+                <option value="select">Select</option>
+                <option value="b23">Batch 23</option>
+                <option value="b24">Batch 24</option>
+                <option value="b25">Batch 25</option>
+                <option value="b26">Batch 26</option>
+                <option value="b27">Batch 27</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="instructor">Instructor:</label>
+            <input type="text" id="instructor" name="instructor" placeholder="Instructor">
+        </p>
+
+        <p>
+            What do you like about our bootcamp?
+            <p>
+                <input type="checkbox" name="classroom" id="classroom" value="classroom">
+                <label for="classroom">Classroom Experience</label>
+
+                </br>
+                <input type="checkbox" name="expertise" id="expertise" value="expertise">
+                <label for="expertise">Instructor Expertise</label>
+            
+                </br>
+                <input type="checkbox" name="collaboration" id="collaboration" value="collaboration">
+                <label for="collaboration">Classmates Collaboration</label>
+
+                </br>
+
+                <input type="checkbox" name="others" id="others">
+                <label for="others">Others</label>
+                <input type="text" name="others" id="others" placeholder="Specify">
+            </p>
+        <p>
+            <label for="comments">Comments for your Instructor</label>
+            <textarea name="comments" id="" cols="30" rows="10" placeholder="Type your comments here, max of 100 characters" maxlength="100" min></textarea>
+        </p>
+        <p>
+            <button type="submit" target="#">Submit</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>

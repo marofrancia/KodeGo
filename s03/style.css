@@ -1,0 +1,99 @@
+/* Univeral Selector */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, cursive;
+}
+
+h1 {
+    color: brown;
+}
+
+/* ID Selector */
+
+#title-1 {
+    color: darkgoldenrod;
+}
+
+/* Class Selector */
+
+.title-2 {
+    color: rebeccapurple;
+    text-align: center;
+}
+
+/* Attribute Selector */
+
+[type="text"] {
+    background-color: seagreen;
+}
+
+/* Combinator Selector */
+
+/* Descendant Selector
+- selects / targets "all elements" that matches the specified element
+
+Syntax: first element child element {
+    property: value
+}
+*/
+
+/* div p {
+    background-color: olive;
+} */
+
+/* Child Selector
+- selects / targets "all" elements that are all "children" of a specified element
+*/
+
+/* div > p {
+    background-color: magenta;
+} */
+
+/* Adjacent Sibling Selector (+)
+- selects / targets an element that is directly after the first selector
+*/
+
+/* p + p {
+    background-color: burlywood;
+} */
+
+/* div + p {
+    background-color: gold;
+} */
+
+/* General Sibling Selector (~) */
+
+
+/* Pseudo Class
+- selector: pseudo-class{property: value}
+*/
+
+/* Unvisited Link */
+a:link {
+    color: red;
+}
+
+/* Visited Link */
+a:visited {
+    color:green
+}
+/* mouse over link */
+a:hover {
+    color:orange;
+}
+
+/* Selected Link */
+
+a:active {
+    color: saddlebrown;
+}
+
+p::first-letter {
+    color: red;
+    font-size: x-large;
+}
+
+#catmoon img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}

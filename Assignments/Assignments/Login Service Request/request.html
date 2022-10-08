@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Page</title>
+    <link rel="stylesheet" href="request.css">
+</head>
+<body>
+    <section class="forms-container">
+        <div class="contentbox">
+            <div>
+                <header>ABC Company IT Service Request Form</header>
+            </div>
+            <div class="formbox">
+                <form class="formcontents" action="#">
+                    <p>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required maxlength="50">
+
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required maxlength="50">
+                    </p>
+
+                    <p>
+                        <label for="emailAdd">Email Address:</label>
+                        <input type="email" name="emailAdd" id="emailAdd" placeholder="Enter a valid e-mail address" required>
+
+                        <label for="PhoneNum">Phone / Mobile Number:</label>
+                        <input type="number" name="phoneNum" id="phoneNum" placeholder="Enter your phone or mobile number" maxlength="11" required>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="worksite" id="onsite">
+                        <label for="onsite">Onsite</label>
+
+                        <input type="radio" name="worksite" id="offsite">
+                        <label for="offsite">Work From Home</label>
+                    </p>
+                    
+                    <p>
+                        <legend>Location</legend>
+                        <textarea name="location" id="location" cols="100%" rows="5" required></textarea>
+                        <ul>
+                            <li>FOR ONSITE: Please state your Workstation No., Department, Floor and Building</li>
+                            <li>FOR WORK FROM HOME: Please complete your address and include a landmark nearest to your location</li>
+                        </ul>
+                    </p>
+                        <span>Service Request Type</span></br>
+                        <input type="checkbox" name="dl.set" id="dl.set">
+                        <label for="dl.set">Desktop / Laptop Setup</label></br>
+    
+                        <input type="checkbox" name="dl.sup" id="dl.sup">
+                        <label for="dl.sup">Desktop / Laptop Support</label></br>
+                        
+                        <input type="checkbox" name="dl.main" id="dl.main">
+                        <label for="dl.main">Desktop / Laptop Maintenance</label></br>
+
+                        <input type="checkbox" name="soft.ins" id="soft.ins">
+                        <label for="soft.ins">Software Installation</label></br>
+
+                        <input type="checkbox" name="soft.sup" id="soft.sup">
+                        <label for="soft.sup">Software Support</label></br>
+
+                        <input type="checkbox" name="per.set" id="per.set">
+                        <label for="per.set">Computer Peripheral Setup</label></br>
+
+                        <input type="checkbox" name="per.ts" id="per.ts">
+                        <label for="per.ts">Peripheral Troubleshooting</label></br>
+
+                        <input type="checkbox" name="per.main" id="per.main">
+                        <label for="per.main">Computer Periperal Maintenance</label></br>
+
+                    <p>
+                        <label for="description">Request Description</label>
+                        <textarea name="description" id="description" cols="100%" rows="5" required placeholder="Please provide a brief description of the problem here"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="upload">Upload supporting document</label></br>
+                        <input type="file" name="upload" id="upload">
+                    </p>
+
+                    <button type="reset">Clear</button>
+                    <button type="submit" formaction="submitted.html">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>l

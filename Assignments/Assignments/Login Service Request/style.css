@@ -1,0 +1,109 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* background and body container */
+.forms-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+    background: url(https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* form box */
+.form-content {
+    max-width: 500px;
+    width: 85%;
+    padding: 30px;
+    border-radius: 10px;
+    background: ghostwhite;
+}
+
+/* logo */
+img {
+    max-width: 100%;
+    position: relative;
+}
+
+/* header only */
+header {
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    color: #4D73C8;
+}
+
+/* forms for username and password */
+form {
+    margin-top: 30px;
+}
+
+form .input-field,
+form .button-field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-field input,
+.button-field button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: large;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+
+.button-field button{
+    background-color: #4D73C8;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+/* clear / reset button */
+.clear-btn button {
+    height: 100%;
+    width: 25%;
+    border: none;
+    font-size: large;
+    font-weight: lighter;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* input field for both username and password */
+.input-field input {
+    padding: 0;
+    border: 1px solid ghostwhite;
+}
+
+
+/* text content including hyperlinks in the page */
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: small;
+    font-weight: lighter;
+}
+
+
+/* hyperlinks only in the page */
+a {
+    text-decoration: none ;
+    color: blue;
+}
+
+/* mouse over behaviour */
+a:hover {
+    text-decoration: underline;
+}
+

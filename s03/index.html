@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <!-- <style> 
+    /* Internal or Embedded CSS */
+        body{
+            background-color: lightblue;
+        }
+
+        h1{
+            background-color: coral;
+            padding: 5%;
+        }
+
+        span {
+            background-color: pink;
+            color: yellow;
+        }
+    </style> -->
+
+    <!-- link for external CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to CSS</h1>
+
+    <!-- Inline CSS -->
+    <p style="color:red">
+        <span style="color: blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dolor quibusdam voluptatem distinctio optio totam hic, nesciunt, sapiente autem ullam dolore vel laborum quidem facere minima incidunt esse adipisci qui.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque minus vitae quis dicta laboriosam. Repellat officia velit sunt atque excepturi. Maxime, error nulla! Quibusdam repellat inventore at facilis odit. Magnam?
+    </p>
+    
+    <p>
+        <h2 id="title-1">Hello World</h2>
+        <h2 class="title-2">Best Section</h2>
+    </p>
+
+    <p>
+        <form action="">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
+
+        </form>
+    </p>
+
+    <!-- Combinator Selector -->
+
+    <div id="parent">
+        <p>
+            <span>
+                First Paragraph
+            </span>
+        </p>
+
+        <p>
+            Second Paragraph
+        </p>
+
+        <section>
+            <p>
+                Third Paragraph
+            </p>
+        </section>
+
+        <p>Trial Paragraph</p>
+    </div>
+
+    <p>Fourth Paragraph</p>
+
+    <p>Fifth Paragraph</p>
+
+    <div>
+        <p>Sixth Paragraph</p>
+        <p>Seventh Paragraph</p>
+    </div>
+
+    <p>Anothe Trial Paragraph</p>
+
+    <div>
+        <p>
+            Eight Paragraph
+        </p>
+
+        <p>Ninth Paragraph</p>
+        <p>New Paragraph</p>
+    </div>
+
+    <a href="https://www.google.com" target="_blank">Link to Google</a>
+
+    <div id="catmoon">
+        <img src="catmoon.jpg" alt="Cat with Red Moon behind." />
+    </div>
+</body>
+</html>
