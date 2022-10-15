@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+             <div class="navbar">
+                <img src="ada square.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu" onclick="toggle">
+             </div>
+
+             <div class="row">
+                <div class="col-1">
+                    <h1>Lady Augusta Ada&nbspKing</h1>
+                    <h2>Countess of Lovelace</h2>
+                    <h3>
+                        <p>was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first computer programmer.</p>
+                    </h3>
+                    <button type="button" class="buttonReadMore"><a href="#">Read more...</a></button>
+                </div>
+                <div class="col-2">
+                    <img src="ada adding machine.png" class="adaMachine">
+                    <div class="colorBox"></div>
+                </div>
+             </div>
+        </div>
+    </header>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "60px";
+
+        function toggle () {
+            if (menuList.style.maxHeight == "60")
+                {
+                    menuList.style.maxHeight = "140px";
+                }
+
+            else {
+                menuList.style.maxHeight = "60px";
+            }
+        }
+    </script>
+
+</body>
+</html>

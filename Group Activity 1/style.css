@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+.container {
+    width: 100%;
+    min-width: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu {
+    width: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    background-color: burlywood;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background-color: brown;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 25%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    overflow: auto;
+}
+
+.col-1 {
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h1{
+    font-size: 54px;
+}
+
+.col-1 h2 {
+    font-size: 30px;
+    color: #777;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p {
+    font-size: 16px;
+    color: gray;
+    font-weight: 100;
+}
+
+.col-1 p {
+    margin: 30px 0;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.col-1::after {
+    content: '';
+    width: 10px;
+    height: 80%;
+    background: brown;
+    position:absolute;
+    left: -40px;
+    top: 8px;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.buttonReadMore a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonReadMore a:hover {
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .adaMachine {
+    max-width: 1200px;
+    min-width: 300px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.colorBox {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    background: brown;
+    opacity: .5;
+    border-radius: 25%;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+}
+
+@media only screen and (max-width:900px) {
+
+    .logo{
+        display: block;
+        z-index: 3;
+        width: 150px;
+        right: 0px;
+    }
+
+    nav ul {
+        width: 100%;
+        background: burlywood;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
