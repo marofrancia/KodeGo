@@ -41,6 +41,11 @@ section {
     text-align: justify;
 }
 
+.aboutContent {
+    padding: 10px;
+    text-align: justify;
+}
+
 .projectContent p {
     text-align: justify;
 }
