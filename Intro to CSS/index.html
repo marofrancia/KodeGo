@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Applying inline styling to a paragraph tag. -->
+
+    <p style="font-size: 18px; color: white; background-color: blue; padding: 20px; width: 100%;"> This is a paragraph with in-line styling.</p>
+
+    <!-- Applying internal styling to a paragraph tag. For the purpose of showing separation from the first paragraph tag, the <span> tag shall be used as an alternative.-->
+
+    <p><span>
+        This is a paragraph with internal styling.
+    </span></p>
+
+    <style>
+        span {
+            color: white;
+            background-color: red;
+            font-size: 18px;
+            width: 100%;
+            padding: 20px;
+        }
+    </style>
+
+    <!-- Using type selector -->
+    <h1>Introduction to CSS</h1>
+
+    <!-- Using ID Selector -->
+    <h2 id="second">the following are the things you will learn in this bootcamp</h2>
+
+    <!-- Using class selector -->
+    <h3>Languages to be learned</h3>
+        <ol>
+            <li class="langList">Hypertext Markup Language</li>
+            <li class="langList">Cascading Style Sheet</li>
+            <li class="langList">Javascrip</li>
+        </ol>
+
+    <div>
+
+        <!-- Using Attribute selector. -->
+    
+        </div>
+        <h1>
+            Tools to be used:
+        </h1>
+            <ol>
+                <li lang="en">VS Code</li>
+                <li lang="en">GitHub</li>
+                <li lang="en">Laptop / Desktop</li>
+                <li lang="en">Internet Connection</li>
+            </ol>
+    </div>
+
+        <!-- Adjacent Sibling Selector -->
+    <div>
+        <h1>
+            Other things to be learned
+        </h1>
+            <ul class="otherthings">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>React.js</li>
+                <li>MongoDB</li>
+            </ul>
+    </div>
+
+        <!-- Image using descendant selector -->
+    <div>
+        <img src="JSlogo.png" alt="">
+    </div>
+
+        <!-- Using General Sibling Selector -->
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, cumque?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+</body>
+</html>
