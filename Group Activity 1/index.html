@@ -21,7 +21,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <img src="menu.png" class="menu" onclick="toggle">
+                <p class="menu">Menu</p>
              </div>
 
              <div class="row">
@@ -41,22 +41,38 @@
         </div>
     </header>
 
-    <script>
-        var menuList = document.getElementById("menuList");
+    <footer>
+        <div class="foot-row">
+            <div class="foot-col fcol1">
+                <p>Powered by:</p>
+                <img src="kodegologo.png" class="footLogo">
+            </div>
+            
+            <div class="foot-col fcol2">
+                <h3>Group Activity</h3>
+                <h1>CODE-BLOODED</h1>
+                <h2>Batch: WD26P</h2> 
+            </div>
 
-        menuList.style.maxHeight = "60px";
+            <div class="foot-col">
+                <p>
+                    Contributors:
+                </p>
+                
+                <p>
+                    NUESTRA
+                </p>
 
-        function toggle () {
-            if (menuList.style.maxHeight == "60")
-                {
-                    menuList.style.maxHeight = "140px";
-                }
+                <p>
+                    ZACK
+                </p>
 
-            else {
-                menuList.style.maxHeight = "60px";
-            }
-        }
-    </script>
+                <p>
+                    MARO
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

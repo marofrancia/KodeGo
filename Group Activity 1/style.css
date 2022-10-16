@@ -11,8 +11,6 @@ body {
 .container {
     width: 100%;
     min-width: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -22,26 +20,27 @@ body {
     display: flex;
     align-items: center;
     font-weight: bold;
+    background-color: burlywood;
 }
 
 .logo {
-    width: 50px;
+    width: 100px;
     cursor: pointer;
-    margin: 30px 0;
+    margin: 20px;
+    padding-left: 0px;
+    border-radius: 75%;
 }
 
 .menu {
-    width: 50px;
+    font-size: large;
     cursor: pointer;
+    padding: 20px;
     display: none;
 }
 
 nav {
     flex: 1;
     text-align: right;
-    background-color: burlywood;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 nav ul li {
@@ -53,13 +52,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: large;
     cursor: pointer;
 }
 
 nav ul li a:hover {
     background-color: brown;
-    font-size: 14px;
+    font-size: larger;
     padding: 5px;
     font-weight: bold;
     border-radius: 25%;
@@ -70,8 +69,9 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     margin: 25px 0;
-    overflow: auto;
-}
+    padding-left: 3%;
+    padding-right: 3%;
+ }
 
 .col-1 {
     flex-basis: 50%;
@@ -158,36 +158,58 @@ button {
     z-index: -1;
 }
 
-@media only screen and (max-width:900px) {
 
-    .logo{
-        display: block;
-        z-index: 3;
-        width: 150px;
-        right: 0px;
-    }
 
-    nav ul {
-        width: 100%;
-        background: burlywood;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        z-index: 2;
-    }
+/* for the footer section */
 
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .menu {
-        display: block;
-    }
+footer {
+    min-height: 50px;
+    position: absolute;
+    bottom: 0;
+    background: burlywood;
+    color: white;
+    width: 100%;
+}
 
-    #menuList {
-        overflow: hidden;
-        transition: 0.5s;
-    }
+
+.footLogo {
+    width: 100%;
+    max-width: 150px;
+    padding-left: 50px;
+}
+
+.foot-row {
+    display: flex;
+    justify-content: center;
+}
+
+.foot-row .foot-col {
+    flex-basis: 30%;
+    align-items: center;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fcol1 p {
+    text-align: left;
+}
+
+.foot-row .fcol1 {
+    text-align: left;
+}
+
+.foot-row .fcol2 {
+    color: #777;
+    opacity: .8;
+}
+
+.foot-row .fcol2 h1 {
+    text-align: center;
+}
+
+.foot-row .fcol2 h2 {
+    text-align: center;
 }
