@@ -34,7 +34,11 @@ header .logo {
 }
 
 header label {
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
     display: none;
+
 }
 
 header .navbar ul li {
@@ -83,10 +87,12 @@ header .navbar ul li:hover > ul  {
 
 #menubar {
     display: none;
+    margin: auto;
+    padding: auto;
 }
 
-@media only screen (max-width:700px) {
-    
+@media (max-width:700px) {
+
     header {
         padding: 20px;
     }
@@ -94,4 +100,49 @@ header .navbar ul li:hover > ul  {
     header label {
         display: initial;
     }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-top: 1px solid gray;
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: white;
+        padding-left: 5%;
+        width: 100%;
+        border-top: none;
+    }
+
+    header .navbar ul li ul li ul {
+        background: white;
+        width: 100%;
+        left: 0;
+    }
+
+    /* header .navbar ul li ul li ul li {
+        background: white;
+        width: 100%;
+        left: 0;
+        padding: 20px; */
+
+    #menubar:checked ~ .navbar {
+        display: initial;
+    }
+
 }
+
+
