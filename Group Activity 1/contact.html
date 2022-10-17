@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+             <div class="navbar">
+                <img src="ada square.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <span class="menu">Menu</span>
+             </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div>
+            <div>
+                <h1>Contact Us!</h1>
+            </div>
+    
+            <div>
+                <form class="form">
+                    <p>
+                        <label for="fName">Full Name:</label>
+                        <input type="Text" id="fName" name="fName" placeholder="e.g. John Smith" style="width: 290px; color: black;"  >
+                    </p>
+    
+                    <p>
+                        <label for="eMail">Email:</label>
+                        <input type="email" id="eMail" name="eMail" placeholder="yourname@email.com" required style="width: 320px; color: black;">
+                     </p>
+    
+                    <p>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Inquiry for Code-Blooded Design" style="width: 305px; color: black;">
+                    </p>
+    
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="40" rows="10" placeholder="Message" style="color: black;"></textarea>
+                    </p>
+    
+                    <p class="button">
+                        <button type="submit" onclick="sent()">Send</button>
+                        <script>
+                            function sent() {
+                             alert ("Your message has been Sent");
+                            }
+                        </script>
+                        <button type="reset">Clear</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-row">
+            <div class="foot-col fcol1">
+                <p>Powered by:</p>
+                <img src="kodegologo.png" class="footLogo">
+            </div>
+            
+            <div class="foot-col fcol2">
+                <h3>Group Activity</h3>
+                <h1>CODE-BLOODED</h1>
+                <h2>Batch: WD26P</h2> 
+            </div>
+
+            <div class="foot-col fcol3">
+                <p>
+                    Contributors:
+                </p>
+                
+                <p class="contributors">
+                    NUESTRA
+                </p>
+
+                <p class="contributors">
+                    ZACK
+                </p>
+
+                <p class="contributors">
+                    MARO
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

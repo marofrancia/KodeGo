@@ -160,13 +160,56 @@ button {
     z-index: -1;
 }
 
+/*for the article section*/
+
+img {
+    border-radius: 50%;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 50px;
+    text-decoration-line: underline;
+}
+
+h2 {
+    font-size: 30px;
+    text-decoration-line: underline;
+}
+.content {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+div h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+div p {
+    text-align: justify;
+    padding-top: 10px;
+}
 
 
 /* for the footer section */
 
 footer {
     min-height: 50px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     background: burlywood;
     color: white;
