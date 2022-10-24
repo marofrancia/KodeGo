@@ -1,8 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-
-/* .carousel-item {
-    height: 50vh;
-    width: auto;
-    background-position: cover;
-    background-position: center;
-} */
+body {
+    background-color: red;
+    height: 100vh;
+}
