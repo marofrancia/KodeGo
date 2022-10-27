@@ -1,0 +1,13 @@
+footer{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid $wht50;
+    padding: 1rem;
+    background: linear-gradient(to top left, $wht50, $wht20);
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}

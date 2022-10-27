@@ -1,0 +1,81 @@
+.green6{background: $green6}
+.gold4{background: $gold4}
+.blue5{background: $blue5}
+.cell1{width: 20px;height: 20px;margin:20px 10px 0;}
+.cell2{width: 40px;height: 20px;margin:20px 10px 0;}
+.cell3{width: 60px;height: 20px;margin:20px 10px 0;}
+.cell4{width: 80px;height: 20px;margin:20px 10px 0;}
+.cell5{width: 100px;height: 20px;margin:20px 10px 0;}
+
+
+.brandContainer{
+    background: url(https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0 8rem;
+}
+
+.brand{
+    margin:2rem;
+
+    // glass format
+    // padding: 20px;
+    // background: linear-gradient(to bottom left, $wht50,$wht10);
+    // border-radius: 1rem;
+    // border: 1px solid $wht10;
+}
+
+.row{
+    display: flex;
+}
+
+.row > div:hover{
+    opacity: .75;
+    border-radius: 1000px;
+    transform: translateX(10px);
+    transition: all .5s;
+}
+
+.brandText{
+    margin: 2rem 0 0;
+    color: $wht90;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: flex-end;
+}
+
+.callAction{
+    position: absolute;
+    top: 7.5rem;
+    right: auto;
+    margin: 2rem 0 2rem;
+    padding: 2rem;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookNow{
+    text-decoration: none;
+    color: $background;
+    background: linear-gradient(to right,$gold4,$green6,$blue5);
+    padding: 1rem;
+    margin: .5rem 0 0;
+    border-radius: 1000px;
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.bookNow:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right,$blue5,$gold4,$green6);
+    transition: all .5s;
+}

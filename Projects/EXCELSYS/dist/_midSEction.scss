@@ -1,0 +1,38 @@
+.midSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 2rem 0;
+    color: $background;
+}
+
+.kicker{
+    text-align: right;
+    margin: 0 1rem;
+}
+.scrollingAdj{
+    height: 1.5rem;
+    overflow: hidden;
+    border-top: 1px solid $background;
+    border-bottom: 1px solid $background;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.scrollText{
+    animation: scrollText 8s linear infinite;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateY(1rem);
+    }    
+    100% {
+        transform: translateY(-17.3rem);
+    }
+}
