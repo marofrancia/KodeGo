@@ -1,0 +1,29 @@
+.referSection{
+    background: $background;
+}
+.referContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.referNow{
+    padding: 1rem 1.5rem;
+    background: linear-gradient(to right,$gold4,$green6,$blue5);
+    border-radius: 1000px;
+    color: $background;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.15rem;
+    margin: 0 1rem;
+}
+
+.referNow:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right,$blue5,$gold4,$green6);
+    transition: all .5s;
+}
+.referContainer > h2 {
+    color: $wht90;
+}
